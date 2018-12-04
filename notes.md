@@ -1,18 +1,16 @@
 # Notes
-Logs for work sessions while preparing for the Linux Foundation's *Kubernetes for Developers* exam.Meant to allow continuous learning, even for short work sessions.
+Logs for work sessions while preparing for the Linux Foundation's *Kubernetes for Developers* exam.  Meant to allow continuous learning, even for short work sessions.
 
-#### 12.3.2018
+## 12.3.2018
 - Checked system requirements use `./ready-for.sh LFD259`.
 
 - Need to fix a few packages that don't have valid gpg key signatures (google cloud sdk, qgis nightly).
-
-Example message:
-`W: GPG error: http://qgis.org/debian xenial InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY CAEB3DC3BDF7FB45`
+    - Example message:  `W: GPG error: http://qgis.org/debian xenial InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY CAEB3DC3BDF7FB45`
 
 - Fixed the GPG keys through QGIS and Google Cloud API documentation.
 - Ran `sudo apt-get update && sudo-apt-get upgrade`
 
-**Chapter 1**
+**Chapter 1**  
 Learning goals of the course:
 1.  Containerize and deploy anew Python script
 2.  Configure the deployment with ConfigMaps, Secrets, and SecurityContexts
